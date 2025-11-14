@@ -69,4 +69,25 @@ pro
 
 
 
+var chk = Promise((res,rej)=>{
+    var n = Math.floor(Map.random()*10)
+
+    if(n<5){
+        return res();
+    }else{
+        return rej();
+    }
+})
+
+chk.then(function(){
+    console.log("below");
+
+    
+})
+.catch(function(){
+    console.log("above");
+    
+})
+
+
 
