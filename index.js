@@ -44,6 +44,27 @@ const allDetails = new Boy ("Ravi",22,"male")
 console.log(allDetails);
 
 
+// Promise
+
+var pro=new Promise((res,rej)=>{
+   if (true){
+    return res();
+   }else{
+    return rej();
+   }
+})
+pro
+
+.then(function(){
+    console.log("resolve done");
+    
+
+})
+
+.catch(function(){
+    console.log("not resolve");
+    
+})
 
 
 
